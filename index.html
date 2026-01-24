@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hans Christian A. Sagayno- Portfolio</title>
+  
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/layout/structure.css">
+  <link rel="stylesheet" href="css/layout/responsive.css">
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/animations.css">
+  <link rel="stylesheet" href="css/themes/dark-mode.css">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+
+  <div class="fixed-header">
+    <div class="header-left">
+      <div class="header-avatar"></div>
+      <div class="header-info">
+        <h2>Hans Chrisitan A. Sagayno</h2>
+        <p>BS Computer Science Student</p>
+      </div>
+    </div>
+    
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()"></button>
+    
+    <div class="header-nav" id="headerNav">
+      <a class="header-nav-link" onclick="scrollToSection('about')">About</a>
+      <a class="header-nav-link" onclick="scrollToSection('education')">Education</a>
+      <a class="header-nav-link" onclick="scrollToSection('skills')">Skills</a>
+      <a class="header-nav-link" onclick="scrollToSection('projects')">Projects</a>
+      <a class="header-nav-link" onclick="scrollToSection('certifications')">Certifications</a>
+      <a class="header-nav-link" onclick="scrollToSection('contact')">Contact</a>
+      <button class="theme-toggle-header" onclick="toggleTheme()"></button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="avatar-wrapper"></div>
+      <h1>Hans Christian A. Sagayno</h1>
+      <p class="subtitle">BS Computer Science • 1st Year Student</p>
+      <p class="tagline">"Passionate about technology and innovation"</p>
+    </div>
+
+    <div class="content">
+      <div class="section" id="about">
+        <h2 class="section-title"><div class="section-icon"></div>About Me</h2>
+        <p class="about-text">I am a passionate and dedicated Computer Science student with a strong interest in software development, web technologies, and problem-solving.</p>
+        <p class="about-text">My goal is to become a skilled tech savy who can create innovative solutions.</p>
+      </div>
+
+      <div class="section" id="education">
+        <h2 class="section-title"><div class="section-icon"></div>Education</h2>
+        <div class="education-item">
+          <h3>BS Computer Science</h3>
+          <p><strong>Mapúa Malayan Colleges Mindanao</strong></p>
+          <p>First Year | 2024 - Present</p>
+          <p>Relevant Coursework: Programming Fundamentals, Data Structures, Web Development</p>
+        </div>
+      </div>
+
+      <div class="section" id="skills">
+        <h2 class="section-title"><div class="section-icon"></div>Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header"><div class="skill-category-icon"></div><h3>Frontend</h3></div>
+            <div class="skill-item">
+              <div class="skill-header"><div class="skill-name"><span>HTML5</span><span>85%</span></div></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><div class="skill-name"><span>CSS3</span><span>80%</span></div></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        <h2 class="section-title"><div class="section-icon"></div>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio website showcasing my skills.</p>
+            <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span></div>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Summative Exam part 3</h3>
+            <p>A summative quiz.</p>
+            
+          
+            <a href="https://sagayno-web-programming-module1-par.vercel.app/" target="_blank">summative part 3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="certifications">
+        <h2 class="section-title"><div class="section-icon"></div>Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="cert-icon"></div>
+            <div class="cert-content">
+              <strong>JAVA ITS certification</strong>
+              <span>Online Platform • 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="contact">
+        <h2 class="section-title"><div class="section-icon"></div>Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon"></div>
+            <div class="contact-details"><strong>Email</strong><span>hcSagayno@mcm.edu.ph</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 Your Name. All rights reserved.</p>
+    </div>
+  </div>
+
+  <div class="scroll-top" id="scrollTop" onclick="scrollToTop()"></div>
+
+  <script src="js/effects/particles.js"></script>
+  <script src="js/ui/theme.js"></script>
+  <script src="js/core/scroll.js"></script>
+  <script src="js/ui/menu.js"></script>
+  <script src="js/effects/observers.js"></script>
+</body>
+</html>

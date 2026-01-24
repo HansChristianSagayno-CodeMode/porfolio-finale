@@ -1,0 +1,18 @@
+/* Theme Toggle Button */
+.theme-toggle-header {
+  padding: 8px 18px; border: 2px solid white; border-radius: 20px;
+  background: transparent; color: white; cursor: pointer; font-weight: 600;
+  transition: all 0.3s ease; font-size: 0.9rem;
+}
+.theme-toggle-header:hover { background: white; color: #fb8218; }
+
+/* Dark Mode Styles */
+body.dark-mode { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+body.dark-mode .container { background-color: rgba(30, 30, 30, 0.95); }
+body.dark-mode .section-title, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: #fb8218; }
+body.dark-mode .about-text, body.dark-mode p, body.dark-mode .contact-details span { color: #ccc; }
+body.dark-mode .education-item, body.dark-mode .skill-category, body.dark-mode .cert-item, body.dark-mode .contact-item { background: rgba(251, 130, 24, 0.1); }
+body.dark-mode .education-item h3, body.dark-mode .timeline-item h3, body.dark-mode .contact-details strong, body.dark-mode .cert-content strong { color: #fff; }
+body.dark-mode .project-card { background: rgba(40, 40, 40, 0.8); border-color: rgba(251, 130, 24, 0.3); }
+body.dark-mode .project-card h3 { color: #fff; }
+body.dark-mode .project-card p { color: #ccc; }
